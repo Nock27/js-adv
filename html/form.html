@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Spongebob" minlength="6" maxlength="15" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required maxlength="15" minlength="6"><br>
+        <label for="email">Email:</label>
+       <input type="email" id="email" placeholder="Spongebob@gmail.com" required><br>
+       <label for="phone">Phone Number:</label> 
+       <input type="phone" id="phone" placeholder="123-456-5546" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+       <label for="date">Birthdate</label> 
+        <input type="date" id="date"><br>
+       <label for="quantity">Quantity</label> 
+        <input type="number" id="quantity" min="0" max="99" value="1"><br>
+       <label for="mr">Mr.</label> 
+       <input type="radio" id="mr" value="Mr." name="title">
+       <label for="ms">Ms.</label> 
+       <input type="radio" id="ms" value="Ms." name="title">
+       <label for="phd">Phd.</label> 
+       <input type="radio" id="phd" value="Phd. " name="title" ><br>
+       <label for="payment">Payment</label> 
+       <select id="payment">
+        <option value="Visa">Visa</option>
+        <option value="Mastercard">Mastercard</option>
+        <option value="Giftcard">Giftcard</option>
+       </select><br>
+       <label for="subscribe">Subscribe</label> 
+       <input type="checkbox" id="subscribe"><br>
+       <label for="comment">Comment</label> 
+       <textarea id="comment" rows="3" columns="25"></textarea><br>
+       <label for="file">File</label> 
+       <input type="file" id="file" accept="image/jpg, image/png"><br>
+ 
+       
+
+       <input type="reset"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
