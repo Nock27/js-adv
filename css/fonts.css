@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+h1{
+    font-family: Roboto-Light,arial;
+}
+p{
+    font-family: Akatab,"courier new";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
