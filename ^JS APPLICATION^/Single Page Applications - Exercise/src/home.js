@@ -1,5 +1,5 @@
-const homeSection = document.querySelector('.home');
 const url = 'http://localhost:3030/data/recipes';
+const homeSection = document.querySelector('.home');
 const recipeList = document.querySelector('.recipe-list')
 export function renderHome(){
     fetch(url)

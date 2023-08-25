@@ -25,8 +25,8 @@ createForm.addEventListener('submit',(e) => {
     fetch('http://localhost:3030/data/recipes', {
         method : 'POST',
         headers: {
-            'content-type' : 'application/json',
-            'X-Authorization' : getToken()
+            'content-type': 'application/json',
+            'X-Authorization': getToken()
         },
         body: JSON.stringify(data)
     })

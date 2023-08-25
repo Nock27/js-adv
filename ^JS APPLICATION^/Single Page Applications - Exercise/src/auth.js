@@ -3,9 +3,9 @@ const userNavigation = document.querySelector('#user');
 
 
 export function updateAuth(){
-    let Serializeduser = localStorage.getItem('user');
+    let serializeduser = localStorage.getItem('user');
 
-    if(Serializeduser){
+    if(serializeduser){
         userNavigation.style.display = 'inline';
         guestNavigation.style.display = 'none'; 
     }else{
@@ -19,11 +19,11 @@ export function logout(){
     updateAuth();
 }
 export function getToken(){
-    let Serializeduser = localStorage.getItem('user');
+    let serializeduser = localStorage.getItem('user');
 
-    if(Serializeduser){
-        let user = JSON.parse(Serializeduser);
-        return user.accsesToken;
+    if(serializeduser){
+        let user = JSON.parse(serializeduser);
+        return user.accessToken;
     }
     
 }
