@@ -43,7 +43,7 @@ function onNavigate(e){
         if(typeof view == 'function'){
             view();
         }
-        console.log(url.pathname);
+        
 
     }
 }
