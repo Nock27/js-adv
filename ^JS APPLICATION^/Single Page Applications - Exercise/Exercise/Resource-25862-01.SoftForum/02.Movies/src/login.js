@@ -1,5 +1,5 @@
 import { homePage } from "./home.js";
-import { showView } from "./util.js";
+import { showView, updateNav } from "./util.js";
 
 const section = document.querySelector('#form-login');
 const form = section.querySelector('form');
@@ -18,6 +18,8 @@ async function onSubmit(e){
     const password = formData.get('password');
 
     await login(email,password);
+    form.reset
+    updateNav();
     homePage();
 }
     
