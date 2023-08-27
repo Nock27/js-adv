@@ -16,7 +16,7 @@ async function onSubmit(e){
 
     const title = formData.get('title');
     const description = formData.get('description');
-    const img = formData.get('imageUrl');
+    const img = formData.get('img');
 
     await createMovie(title, description, img);
     form.reset();
@@ -30,7 +30,7 @@ async function createMovie(title, description, img) {
     await fetch('http://localhost:3030/data/movies', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'content-type': 'application/json',
             'X-Authorization': user.accessToken
         },
         body: JSON.stringify({title,description,img})
