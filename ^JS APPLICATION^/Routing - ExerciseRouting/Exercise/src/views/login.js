@@ -30,6 +30,7 @@ const loginTemplate = (onSubmit, errorMsg) => html`
 
 export function loginPage (ctx) {
     update();
+    
     function update(errorMsg){
           ctx.render(loginTemplate(onSubmit, errorMsg)); 
     }
